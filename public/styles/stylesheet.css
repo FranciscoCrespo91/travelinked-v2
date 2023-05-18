@@ -251,6 +251,7 @@ video {
 }
 .image-about{
     height: 35vh;
+    border-radius:5%;
 }
 
 .about-display-info{
