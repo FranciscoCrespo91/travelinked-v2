@@ -184,7 +184,7 @@ video {
 
 .info-cards{
     width: 70%;
-    margin-left: 15%;
+    margin-left: 5%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2vw;
