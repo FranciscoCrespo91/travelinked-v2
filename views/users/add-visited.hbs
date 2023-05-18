@@ -1,0 +1,15 @@
+<h2 class="page-hd">Add a Visited Country</h2>
+</br></br>
+
+<form action="/add-visited" method="post" class="edit-form">
+<div class="form-div">
+  <label for="country">Select Country:</label>
+      <select name='visitedCountries' id='country'>
+          {{#each countriesList}}
+            <option name="visitedCountries" value='{{this._id}}'>{{this.name}}</option>
+          {{/each}}
+      </select>
+</div>
+
+  <button type="submit" class="edit-btn">Add visited country</button>
+</form>

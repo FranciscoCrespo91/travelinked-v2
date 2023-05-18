@@ -1,0 +1,27 @@
+<div class="video-wrapper">
+      <video autoplay muted loop class="bg-video">
+        <source src="/images/globeweb.webm" type="video/webm"></src>
+      </video>
+</div>
+<section class="login">
+  <div id="login-form">
+    <form class="login-form" action="/login" method="POST">
+
+      <label class="login-signup-text">
+        <input style="text-align:center" type="text" name="username" placeholder="Your username" />
+      </label>
+
+
+      <label class="login-signup-text">
+        <input style="text-align:center" type="password" name="password" placeholder="Your password" />
+      </label>
+
+      <button class="login-signup-btns" type="submit">Log In</button>
+
+
+      {{#if errorMessage}}
+        <p class="error">{{errorMessage}}</p>
+      {{/if}}
+    </form>
+  </div>
+</section>

@@ -1,0 +1,38 @@
+<h2 class="profile-title">Welcome {{foundUser.username}}!</h2>
+
+    
+
+<section class="profile-layout">
+    <div class="profile-info">
+        <img class="profile-picture" src="{{foundUser.picture}}">
+        <p class="user-info">{{foundUser.firstName}} {{foundUser.lastName}}</p>
+        <p class="user-info">From: {{foundUser.nationality}}</p>
+        <p class="user-info">Age: {{foundUser.age}}</p>
+        <a class="profile-btns" href="/add-visited">Add visited countries</a>
+        <p></p>
+        <a class="profile-btns" href="/edit-profile">Edit Profile</a>
+    </div>
+    
+    <div class="visited-wrapper">
+        <div class="visited-display">
+            <section class="info-cards">
+                {{#each foundUser.visitedCountries}}
+                    <div class="display-cards">
+                        <div class="card" style="width: 14vw;">
+                            <img src="{{this.flag}}" class="card-img-top flag-border" alt="Image of flag couldn't be loaded">
+                            <div class="card-body">
+                                <p class="card-text card-name">{{this.name}}</p>
+                                <p class="card-text card-name">{{this.rating}}</p>
+                                <p class="card-text card-name">{{this.cities}}</p>
+                            </div>
+                            </br>
+                            <form action="/remove-visited/{{_id}}" method="post">
+                                <button type="submit" class="visited-btns">Delete</button>
+                            </form>
+                        </div>
+                    </div>
+                {{/each}}
+            </section>
+        </div>
+    </div>
+</section>

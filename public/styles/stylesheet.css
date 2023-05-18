@@ -1,0 +1,428 @@
+/* green rgb(20,141,0)
+   red rgb(220,21,0)*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+
+    z-index: 1;
+    background-image:url("../images/bg-travel.jpg");
+}
+
+.bg-video{
+    width:100%;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+}
+
+.bg-image{
+    width:100%;
+    height: 100%;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+.navbar {
+    background-color: rgb(255, 245, 201);
+}
+
+.nav-logo{
+    width: 7vw;
+}
+
+.form-control{
+    width:15vw;
+}
+
+.btn-outline-success{
+    margin-right: 5vw;
+}
+
+.nav-au{
+    margin-right: 5vw;
+}
+
+.nav-item > a {
+    color:rgb(20,141,0);
+}
+
+.nav-item > a:hover {
+    color:rgb(11, 71, 0);
+}
+
+.nav-item > a:focus {
+    color:rgb(11, 71, 0);
+}
+
+.dropdown-menu{
+    border-style: none;
+    background-color: rgb(255, 245, 201);
+}
+
+.dropdown-menu > li > a{
+    color:rgb(20,141,0);
+}
+
+.dropdown-menu > li > a:hover{
+    color:rgb(255, 245, 201);
+    background-color: rgb(20,141,0);
+}
+
+.form-control{
+    border: solid rgb(20,141,0) 1px;
+}
+
+.btn-outline-success{
+    background-color: rgb(255, 245, 201);
+    color:rgb(20,141,0);
+    border:solid rgb(20,141,0) 1px;
+    transition-duration: 0.5s;
+}
+
+.btn-outline-success:hover{
+    background-color: rgb(20,141,0);
+    color:rgb(255, 245, 201);
+    border:solid rgb(20,141,0) 1px;
+}
+
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .welcome{
+    color:white;
+    font-size: 38px;
+    font-weight: bold;
+    background-color: rgba(255,255,255,0.5);
+    width:24vw;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    margin-top: 13%;
+    margin-left: 38%;
+  }
+
+  .welcome > span{
+    margin-top: 6vh;
+    margin-bottom: 3vh;
+  }
+
+  .enter-options{
+    margin-top: 15px;
+  }
+
+  .enter-options > a{
+    color:white;
+    font-size: 24px;
+    background-color: rgb(20,141,0);
+    border-radius: 5px;
+    padding: 5px 10px 10px 10px;  
+    margin: 0px 20px;
+    text-decoration: none;
+    border:solid white 2px;
+    transition-duration: 0.5s;
+  }
+
+  .enter-options > a:hover{
+    background-color: white;
+    color: rgb(20,141,0);
+    border:solid rgb(20,141,0) 2px;
+  }
+
+.info-cards{
+    width: 70%;
+    margin-left: 15%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2vw;
+}
+
+.card-text{
+    text-align: center;
+    font-size: 1rem;
+}
+
+.page-hd{
+    text-align: center;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    color:black;
+}
+.flag-border{
+    border: solid black 1px;
+    max-height:19vh;
+}
+.display-cards{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-left: 20%;
+}
+
+.card {
+    text-align: center;
+    padding: 1vh 1vw;
+    background-color: rgba(255,255,255,0.5);
+    border: solid rgb(20,141,0) 1px;
+    transition-duration: 1s;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.card:hover{
+    transform: scale(1.15);
+}
+
+.card-name {
+    font-size: 1.8rem;
+}
+
+.about-info{
+    margin-top: 5vh;
+    text-align: center;
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.about-info > h2 {
+    margin-bottom: 5vh;
+}
+
+.about-display {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    margin-top: 2vh;
+}
+.image-about{
+    height: 35vh;
+}
+
+.about-display-info{
+    width: 30%;
+    font-size: 1.2rem;
+    text-align: justify;
+    margin-top: 2vh;
+    background-color:  rgba(255,255,255,0.7);
+    padding: 2vh 2vw;
+    border-radius:2%;
+    border: solid black 1px;
+}
+
+.login{
+    color:white;
+    font-weight: bold;
+    background-color: rgba(255,255,255,0.5);
+    width:24vw;
+    height: 30vh;
+    border-radius: 5px;
+    margin-top: 13%;
+    margin-left: 38%;
+  }
+
+.login-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-signup-btns{
+    color:white;
+    font-size: 1.8rem;
+    background-color: rgb(20,141,0);
+    border-radius: 5px;
+    padding: 0.5vh 0.5vw;  
+    text-decoration: none;
+    border:solid white 2px;
+    transition-duration: 0.5s;
+    margin-top: 3vh;
+}
+
+.login-signup-btns:hover{
+    background-color: white;
+    color: rgb(20,141,0);
+    border:solid rgb(20,141,0) 2px;
+}
+
+.login-signup-text{
+    font-size: 1.5rem;
+    margin-top: 3vh;
+}
+
+.signup{
+    color:white;
+    font-weight: bold;
+    background-color: rgba(255,255,255,0.5);
+    width:24vw;
+    height: 34vh;
+    border-radius: 5px;
+    margin-top: 13%;
+    margin-left: 38%;
+  }
+
+.signup-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-btns{
+    text-decoration: none;
+    color:white;
+    font-size: 1.1rem;
+    background-color: rgb(20,141,0);
+    border-radius: 5px;
+    padding: 0.5vh 0.5vw;  
+    text-decoration: none;
+    border:solid white 2px;
+    transition-duration: 0.5s;
+    width:8vw;
+    text-align: center;
+}
+
+.profile-btns:hover{
+    background-color: white;
+    color: rgb(20,141,0);
+    border:solid rgb(20,141,0) 2px;
+}
+
+.profile-title{
+    font-size: 3.5rem;
+    margin-top: 5vh;
+    text-align: center;
+    margin-bottom: 10vh;
+    font-weight: bold;
+    color: rgb(20,141,0);
+}
+
+.profile-info{
+    padding: 1vh 1vw;
+    display: flex;
+    width:12%;
+    height: 60vh;
+    margin-left: 10%;
+    justify-content: center;
+    flex-direction: column;
+    border: solid black 1px;
+    background-color: rgba(20,141,0,0.4);
+    align-items: center;
+    color:white;
+    font-weight:bold;
+}
+
+.profile-picture{
+    height: 22vh;
+    width: 10vw;
+    border-radius: 5px;
+    margin-bottom: 3vh;
+}
+
+.user-info{
+    font-size: 1.1rem;
+}
+
+.visited-display{
+    width:65%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2vw;
+}
+
+.edit-btn{
+    text-decoration: none;
+    color:white;
+    font-size: 1.1rem;
+    background-color: rgb(20,141,0);
+    border-radius: 5px;
+    padding: 0.5vh 0.5vw;  
+    text-decoration: none;
+    border:solid white 2px;
+    transition-duration: 0.5s;
+    width:6vw;
+    text-align: center;
+}
+
+.edit-btn:hover{
+    background-color: white;
+    color: rgb(20,141,0);
+    border:solid rgb(20,141,0) 2px;
+}
+
+.form-div{
+    margin-bottom: 4vh;
+}
+
+.edit-profile{
+    margin-left: 10%;
+}
+
+.edit-form{
+    display: flex;
+    justify-content: center;
+    width:40%;
+    margin-left:30%;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2rem;
+    background-color: rgba(20,141,0,0.3);
+    padding-top:4vh;
+    padding-bottom: 4vh;
+    border: solid black 1px;
+}
+
+.visited-wrapper{
+    width: 100%;
+}
+
+.profile-layout{
+    display: flex;
+}
+
+.visited-btns{
+    text-decoration: none;
+    color:white;
+    font-size: 1.1rem;
+    background-color: rgb(20,141,0);
+    border-radius: 5px;
+    padding: 0.5vh 0.5vw;  
+    text-decoration: none;
+    border:solid white 2px;
+    transition-duration: 0.5s;
+    width:4vw;
+    text-align: center;
+}
+
+.visited-btns:hover{
+    background-color: white;
+    color: rgb(20,141,0);
+    border:solid rgb(20,141,0) 2px;
+}

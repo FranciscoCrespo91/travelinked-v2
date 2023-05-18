@@ -1,0 +1,34 @@
+<h2 class="page-hd">{{foundUser.username}} Profile</h2>
+</br></br>
+  <form action="/edit-profile" method="post" class="edit-form">
+
+    <div class="form-div">
+      <label for="name">First Name:</label>
+      <input type="text" name="firstName" id="firstName" value="{{foundUser.firstName}}">
+    </div>
+
+    <div class="form-div">
+      <label for="name">Last Name:</label>
+      <input type="text" name="lastName" id="lastName" value="{{foundUser.lastName}}">
+    </div>
+    <div class="form-div">
+      <label for="name">Age:</label>
+      <input type="number" name="age" id="age" value="{{foundUser.age}}">
+    </div>
+    <div class="form-div">
+      <label for='nationality'>From:</label>
+      <select name='nationality' id='country'>
+          {{#each countries}}
+            <option name="nationality" value='{{this.name}}'>{{this.name}}</option>
+          {{/each}}
+      </select>
+    </div>
+    <img src="">
+
+    <button type="submit" class="edit-btn">Edit Profile</button>
+  </form>
+
+
+{{!-- <a class="profile-btns">Edit Username</a>
+<a class="profile-btns">Edit password</a> --}}
+

@@ -1,0 +1,21 @@
+<h2 class="page-hd">List of all countries<br />In Africa!</h2>
+<section class="info-cards">
+  {{#each africa}}
+      <div class="display-cards">
+        <div class="card" style="width: 18rem;">
+          <img src="{{this.flags.png}}" class="card-img-top flag-border" alt="Image of flag couldn't be loaded"/>
+          <div class="card-body">
+            <p class="card-text card-name">{{this.name.common}}</p>
+            <p class="card-text">{{this.continents}}</p>
+            <p class="card-text">Population: {{this.population}}</p>
+            <p class="card-text">Capital: {{this.capital}}</p>
+            {{#each currencies}}
+              <p class="card-text">Currency Name:
+                {{this.name}}
+                {{this.symbol}}</p>
+            {{/each}}
+          </div>
+        </div>
+      </div>
+  {{/each}}
+</section>
