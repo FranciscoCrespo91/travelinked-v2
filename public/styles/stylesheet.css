@@ -112,7 +112,7 @@ video {
     align-items: center;
     justify-content: center;
 
-    background-image: url("../images/globe.gif");
+    background-image: url("globe.gif");
     background-repeat: no-repeat;
     position: fixed;
     right: 0;
