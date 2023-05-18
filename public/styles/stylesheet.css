@@ -142,23 +142,26 @@ video {
     font-size: 38px;
     font-weight: bold;
     background-color: rgba(255,255,255,0.5);
-    width:24vw;
+    width:26vw;
     height: 30vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 5px;
     margin-top: 13%;
-    margin-left: 38%;
+    margin-left: 37%;
   }
 
   .welcome > span{
     margin-top: 6vh;
     margin-bottom: 3vh;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    text-shadow: 1px 1px black;
   }
 
   .enter-options{
-    margin-top: 15px;
+    margin-top: 5%;
   }
 
   .enter-options > a{
@@ -248,10 +251,33 @@ video {
     display: flex;
     justify-content: center;
     margin-top: 2vh;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-display > a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color:rgb(20,141,0);
+    transition: 0.5s;
+}
+
+.git-logo{
+    width:8%;
+    transition: 0.5s;
+}
+
+.git-logo:hover{
+    filter: brightness(0) invert(1);
+}
+
+.about-display > a:hover {
+    color: rgb(11, 71, 0);
 }
 .image-about{
     height: 35vh;
     border-radius:5%;
+    border: solid black 2px;
 }
 
 .about-display-info{
@@ -348,7 +374,10 @@ video {
     text-align: center;
     margin-bottom: 10vh;
     font-weight: bold;
-    color: rgb(20,141,0);
+    color: white;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(220,21,0);
+    text-shadow: 2px 2px rgb(220,21,0);
 }
 
 .profile-info{
@@ -377,6 +406,15 @@ video {
     font-size: 1.1rem;
 }
 
+.countries-bg{
+    background-color:rgb(211, 254, 255);
+    width: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: -1;
+    margin-top: 3%;
+}
 .visited-display{
     width:65%;
     display: grid;
