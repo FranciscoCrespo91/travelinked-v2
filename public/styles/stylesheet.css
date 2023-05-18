@@ -414,6 +414,7 @@ video {
     left:0;
     z-index: -1;
     margin-top: 3%;
+    padding-bottom: 4%;
 }
 .visited-display{
     width:65%;
@@ -470,6 +471,7 @@ video {
 
 .profile-layout{
     display: flex;
+    padding-bottom: 4%;
 }
 
 .visited-btns{
